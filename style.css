@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+:root {
+	--red: hsl(0, 100%, 74%);
+	--dark-blue: hsl(249, 10%, 26%);
+}
+
 * {
 	font-family: 'Poppins', sans-serif;
 	font-size: 100%;
@@ -11,7 +16,7 @@ body {
 	display: flex;
 	justify-content: space-around;
 	background-image: url('./images/bg-intro-mobile.png');
-	background-color: hsl(0, 100%, 74%);
+	background-color: var(--red);
 }
 
 .signup {
@@ -82,12 +87,12 @@ input.form-elements {
 }
 input.form-elements:focus {
 	outline-style: none;
-	border-color: hsl(249, 10%, 26%);
-	caret-color: hsl(249, 10%, 26%);
-	color: hsl(249, 10%, 26%);
+	border-color: var(--dark-blue);
+	caret-color: var(--dark-blue);
+	color: var(--dark-blue);
 }
 input.input-error {
-	border:  2px solid hsl(0, 100%, 74%);
+	border:  2px solid var(--red);
 }
 
 small {
@@ -95,7 +100,7 @@ small {
 	text-align: right;
 	font-size: .75rem;
 	font-weight: 500;
-	color: hsl(0, 100%, 74%);
+	color: var(--red);
 }
 
 i {
@@ -107,11 +112,11 @@ i {
 	bottom: 3.5rem;;
 	text-align: right;
 	font-size: 20px;
-	color: hsl(0, 100%, 74%);
+	color: var(--red);
 }
 i.input-error {
 	visibility: visible;
-	color: hsl(0, 100%, 74%);
+	color: var(--red);
 }
 
 #form-submit-btn {
@@ -141,7 +146,7 @@ i.input-error {
 .terms a {
 	text-decoration: none;
 	font-weight: 600;
-	color: hsl(0, 100%, 74%) ;
+	color: var(--red) ;
 }
 .terms a:hover {
 	font-weight: 700;
@@ -170,5 +175,4 @@ footer {
 	header p {
 		font-size: 1rem;
 	}
-
 }
